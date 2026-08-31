@@ -1,6 +1,6 @@
 # jarvis
 
-Jarvis is an enterprise-grade, autonomous affiliate marketing automation ecosystem built on Next.js 15 (App Router), Supabase PostgreSQL, and Google Gemini 3.7 Flash. It is designed to remove manual friction from e-commerce content production and distribution by running an intelligent, self-healing pipeline that discovers products, generates optimized copy, builds trackable affiliate links, and deploys campaigns without manual intervention.
+Jarvis is an enterprise-grade, autonomous affiliate marketing automation ecosystem built on Next.js 15 (App Router), Supabase PostgreSQL, and Google Gemini models (`gemini-3.7-flash` for content generation with `gemini-3.5-flash-lite` for high-volume ingestion/classification). It is designed to remove manual friction from e-commerce content production and distribution by running an intelligent, self-healing pipeline that discovers products, generates optimized copy, builds trackable affiliate links, and deploys campaigns without manual intervention.
 
 ## Core Orchestrator
 
