@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import 'tailwindcss';
+
+:root { --background:#080a0f; --foreground:#e8edf3; --panel:#0d1118; --panel-2:#111722; --line:#1d2934; --muted:#7c8995; --cyan:#47e6d3; --violet:#8d7bff; --lime:#c7f36b; --danger:#ff6b7a; }
+@theme inline { --color-background:var(--background); --color-foreground:var(--foreground); --font-sans:'Space Grotesk',sans-serif; --font-mono:'DM Mono',monospace; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--background); color:var(--foreground); font-family:'Space Grotesk',sans-serif; }
+button { font:inherit; }
+::selection { background:var(--cyan); color:var(--background); }
+.grid-bg { background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px); background-size:32px 32px; opacity:.22; }
+.panel { background:var(--panel); border:1px solid var(--line); }
+.panel-hover { transition:transform .2s ease,border-color .2s ease,background .2s ease; }
+.panel-hover:hover { transform:translateY(-2px); border-color:#31505b; background:var(--panel-2); }
+.scanline { position:relative; overflow:hidden; }
+.scanline:after { content:''; position:absolute; inset:0; pointer-events:none; background:linear-gradient(transparent 50%,rgba(71,230,211,.025) 51%,transparent 52%); background-size:100% 6px; }
